@@ -54,17 +54,48 @@ function About() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between gap-2 w-full mt-10">
-        <div className="w-[49%] h-[448px] border rounded-[8px] border-black">
-          <Image src="../logo.svg" width={135} height={32} alt="Chizlab logo" />
-          <h4 className="text-[24px] ">Chizmachilik va dizayn sohasidagi O‘zbekistondagi ilk sayt</h4>
-          <h4 className="text-[24px] ">
+      <div className="flex items-center justify-between gap-2 w-full mt-10 ">
+        <div className="w-[49%] h-[448px] border rounded-[8px] border-gray-500 px-[55px] py-[69px] flex-col flex items-start gap-[30px]">
+          <Image
+            src="../logo.svg"
+            width={135}
+            height={32}
+            alt="Chizlab logo"
+            className="mb-4"
+          />
+          <h4 className="text-2xl w-[380px]">
+            Chizmachilik va dizayn sohasidagi O‘zbekistondagi ilk sayt
+          </h4>
+          <h4 className="text-[24px] w-[505px]">
             Saytda chizmachilik va dizaynga oid kitob,maqola,taqdimot va
             videolar jamlangan
           </h4>
-          <Button>Batafsil</Button>
+          <Button asChild>
+            <Link
+              href="/login"
+              className="hover:border px-11 py-5 hover:border-black font-extralight hover:bg-white hover:text-black">
+              Batafsil
+            </Link>
+          </Button>
         </div>
-        <div className="w-[49%] h-[448px] border rounded-[8px] border-black"></div>
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-[49%]  h-[448px]">
+          <div className="flex rounded-[8px] flex-col items-center justify-center gap-[42px] border border-gray-500 py-4">
+            <h3 className="text-4xl">Adabiyotlar</h3>
+            <h5 className="text-2xl">Chizmachilik/Dizayn</h5>
+          </div>
+          <div className="flex rounded-[8px] flex-col items-center justify-center gap-[42px] border border-gray-500 py-4">
+            <h3 className="text-4xl">Taqdimotlar</h3>
+            <h5 className="text-2xl">Chizmachilik/Dizayn</h5>
+          </div>{" "}
+          <div className="flex rounded-[8px] flex-col items-center justify-center gap-[42px] border border-gray-500 py-4">
+            <h3 className="text-4xl">Maqolalar</h3>
+            <h5 className="text-2xl">Chizmachilik/Dizayn</h5>
+          </div>{" "}
+          <div className="flex rounded-[8px] flex-col items-center justify-center gap-[42px] border border-gray-500 py-4">
+            <h3 className="text-4xl">Videolar</h3>
+            <h5 className="text-2xl">Chizmachilik/Dizayn</h5>
+          </div>
+        </div>
       </div>
     </section>
   );

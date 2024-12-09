@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Main() {
   return (
-    <main className="flex items-center gap-5 justify-between container mx-auto">
+    <main className="flex items-center gap-5 justify-between container mx-auto mb-[334px]">
       <div className="w-[60%] h-[449px] bg-black rounded-tr-[146.5px] flex flex-col items-center justify-between rounded-b-[100px] relative group  hover:bg-white hover:border-black hover:border transition-all">
         <h3 className="text-white font-normal mt-[154px] group-hover:text-black text-[50px]">
           ADABIYOT VA MAQOLALAR
@@ -55,7 +55,7 @@ function Main() {
             VIDEOLAR
           </h3>
           <Link
-            href="/Adabiyotlar"
+            href="/videolar"
             className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 group-hover:text-black text-[24px]">
             Ro‘yhati
             <svg
