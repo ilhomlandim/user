@@ -4,10 +4,10 @@ import { Button } from "./ui/button";
 
 function About() {
   return (
-    <section className=" mt-20 flex flex-col items-center gap-4 container mx-auto">
+    <section className=" mt-20 flex flex-col items-center gap-4  container mx-auto">
       <h2 className="text-[50px]">Ma’lumotlar makoni</h2>
-      <div className="flex items-center gap-2 justify-between w-full ">
-        <div className="w-[48%] h-[371px] bg-black rounded-tr-[224.5px] flex flex-col items-center gap-4 justify-between rounded-bl-[100px] rounded-br-[195.5px] relative group  hover:bg-white hover:border-black hover:border transition-all">
+      <div className="flex items-center gap-2 justify-between flex-wrap  w-full ">
+        <div className="w-[740px] h-[371px] bg-black rounded-tr-[224.5px] flex flex-col items-center gap-4 justify-between rounded-bl-[100px] rounded-br-[195.5px] relative group  hover:bg-white hover:border-black hover:border transition-all">
           <h3 className="text-white font-normal mt-[154px] group-hover:text-black text-[50px] ">
             CHIZMACHILIK
           </h3>
@@ -30,7 +30,7 @@ function About() {
             </svg>
           </Link>
         </div>
-        <div className="w-[48%] h-[371px] bg-black rounded-tr-[224.5px] flex flex-col items-center justify-between rounded-bl-[100px] rounded-br-[195.5px] relative group  hover:bg-white hover:border-black hover:border transition-all">
+        <div className="w-[740px] h-[371px] bg-black rounded-tr-[224.5px] flex flex-col items-center justify-between rounded-bl-[100px] rounded-br-[195.5px] relative group  hover:bg-white hover:border-black hover:border transition-all">
           <h3 className="text-white font-normal mt-[154px] group-hover:text-black text-[50px] mb-[15px]">
             DIZAYN
           </h3>
@@ -54,8 +54,8 @@ function About() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between gap-2 w-full mt-10 ">
-        <div className="w-[49%] h-[448px] border rounded-[8px] border-gray-500 px-[55px] py-[69px] flex-col flex items-start gap-[30px]">
+      <div className="flex items-center justify-between gap-2 w-full flex-wrap mt-10 ">
+        <div className="w-[740px] h-[448px] border rounded-[8px] border-gray-500 px-[55px] py-[69px] flex-col flex items-start gap-[30px]">
           <Image
             src="../logo.svg"
             width={135}
@@ -78,7 +78,7 @@ function About() {
             </Link>
           </Button>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-[49%]  h-[448px]">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-[740px]  h-[448px]">
           <div className="flex rounded-[8px] flex-col items-center justify-center gap-[42px] border border-gray-500 py-4">
             <h3 className="text-4xl">Adabiyotlar</h3>
             <h5 className="text-2xl">Chizmachilik/Dizayn</h5>

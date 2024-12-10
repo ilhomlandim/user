@@ -11,6 +11,42 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const gilroyBlack = localFont({
+  src: "./fonts/Gilroy-Black.woff",
+  variable: "--font-gilroy-black",
+  weight: "100 900",
+});
+const gilroyRegular = localFont({
+  src: "./fonts/Gilroy-Regular.woff",
+  variable: "--font-gilroy-regular",
+  weight: "400",
+});
+const gilroyMedium = localFont({
+  src: "./fonts/Gilroy-Medium.woff",
+  variable: "--font-gilroy-medium",
+  weight: "500",
+});
+const gilroySemibold = localFont({
+  src: "./fonts/Gilroy-SemiBold.woff",
+  variable: "--font-gilroy-semibold",
+  weight: "100 900",
+});
+const gilroyHeavy = localFont({
+  src: "./fonts/Gilroy-Heavy.woff",
+  variable: "--font-gilroy-heavy",
+  weight: "100 900",
+});
+
+const gilroyLight = localFont({
+  src: "./fonts/Gilroy-Light.woff",
+  variable: "--font-gilroy-light",
+  weight: "100 900",
+});
+const gilroyThin = localFont({
+  src: "./fonts/Gilroy-Thin.woff",
+  variable: "--font-gilroythin",
+  weight: "100 900",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -21,8 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uz">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${gilroyMedium.variable} ${gilroyRegular.variable} antialiased`}>
         {children}
       </body>
     </html>
