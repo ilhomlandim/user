@@ -14,9 +14,9 @@ export default function Home() {
       <NavBar></NavBar>
       <Main></Main>
       <About></About>
-      {/* 
-      <PublicSources></PublicSources>
-      <Footer></Footer> */}
+
+      {/* <PublicSources></PublicSources> */}
+      <Footer></Footer>
       {/* <Button>Click me</Button> */}
     </div>
   );
