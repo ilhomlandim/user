@@ -70,7 +70,7 @@ function PublicSources() {
       {/* 
       
       */}
-      <div className="w-full items-center flex gap-5 mt-8 flex-col  ">
+      <div className="w-full items-center flex gap-5 mt-8 flex-wrap justify-around  ">
         <div className="w-[367px] h-[371px] bg-black rounded-tr-[224.5px] flex flex-col items-center gap-4 justify-between rounded-bl-[100px] rounded-br-[195.5px] relative group  hover:bg-white hover:border-black hover:border transition-all">
           <h3 className="text-white font-normal mt-[154px] group-hover:text-black text-[50px] ">
             Adabiyotlar

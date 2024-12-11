@@ -15,7 +15,7 @@ export default function Home() {
       <Main></Main>
       <About></About>
 
-      {/* <PublicSources></PublicSources> */}
+      <PublicSources></PublicSources>
       <Footer></Footer>
       {/* <Button>Click me</Button> */}
     </div>
