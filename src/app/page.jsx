@@ -1,25 +1,12 @@
-import About from "@/components/About";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Main from "@/components/Main";
-import NavBar from "@/components/NavBar";
-import { Desktop } from "@/components/Navbars";
-import PublicSources from "@/components/PublicSources";
+import { Desktop, Mobile } from "@/components/Navbars";
 
-import { Button } from "@/components/ui/button";
-
-export default function Home() {
+export default function page() {
   return (
-    <div>
-      <Header></Header>
-      <Desktop></Desktop>
-      {/* <NavBar></NavBar> */}
-      {/* <Main></Main> */}
-      {/* <About></About> */}
-
-      {/* <PublicSources></PublicSources> */}
-      {/* <Footer></Footer> */}
-      {/* <Button>Click me</Button> */}
-    </div>
+    <>
+      <Header />
+      <Desktop />
+      <Mobile />
+    </>
   );
 }
