@@ -26,8 +26,8 @@ export function Mobile() {
   const { mobileNavbar } = useAppStore();
   return (
     <div
-      className={`sm:hidden duration-300 absolute w-full z-40 bg-slate-50 p-5 transition-transform ${
-        mobileNavbar ? "translate-y-0 top-[60px]" : "-translate-y-full top-0"
+      className={`sm:hidden duration-300 absolute w-full z-40 bg-primary-foreground p-5 transition-transform ${
+        mobileNavbar ? "translate-y-0 top-[76px]" : "-translate-y-full top-0"
       }`}
     >
       <nav className="base-container mb-5">

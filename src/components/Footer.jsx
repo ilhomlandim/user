@@ -1,65 +1,101 @@
-import Image from "next/image";
+import Link from "next/link";
+import Logo from "./Logo";
+import { buttonVariants } from "./ui/button";
+import { navLinks } from "@/constants";
+
+const contact = [
+  {
+    text: "Telefon",
+    path: "https://json-api.uz",
+  },
+  {
+    text: "Email",
+    path: "https://json-api.uz",
+  },
+  {
+    text: "Manzil",
+    path: "https://json-api.uz",
+  },
+];
+
+const sections = [
+  {
+    text: "Chizmachilik",
+    path: "https://json-api.uz",
+  },
+  {
+    text: "Dizayn",
+    path: "https://json-api.uz",
+  },
+];
 
 function Footer() {
   return (
-    <footer className="bg-black pt-[71px] pb-[197px] px-24 mt-20">
-      <div className="container mx-auto flex  justify-between flex-wrap gap-10">
-        <div className="flex items-start flex-col gap-[45px] mt-4">
-          <h2 className="text-white text-4xl">Bog‘lanish</h2>
-          <ul className=" flex flex-col items-start gap-[25px]">
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Telefon
-            </li>
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Email
-            </li>
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Manzil
-            </li>
+    <footer className="bg-primary text-primary-foreground py-5 lg:py-10">
+      <div className="base-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center justify-items-start sm:items-start grid-rows-4 sm:grid-rows-3 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4">
+        <div className="flex flex-col row-start-4 sm:row-start-3 md:row-start-2 lg:row-start-1">
+          <h2 className="mb-5 font-medium text-2xl">Bog'lanish</h2>
+          <ul className="flex flex-col">
+            {contact.map(({ text, path }) => {
+              return (
+                <li key={text}>
+                  <Link
+                    className={`${buttonVariants({
+                      variant: "link",
+                    })} text-white !p-0`}
+                    href={path}
+                    target="_blank"
+                  >
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div className="flex items-start flex-col gap-[45px] mt-4">
-          <h2 className="text-white text-4xl">Bo‘limlar</h2>
-          <ul className=" flex flex-col items-start gap-[25px]">
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Chizmachilik
-            </li>
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Dizayn
-            </li>
+        <div className="flex flex-col row-start-3 sm:row-start-2 lg:row-start-1">
+          <h2 className="mb-5 font-medium text-2xl">Bo'limlar</h2>
+          <ul className="flex flex-col">
+            {sections.map(({ text, path }) => {
+              return (
+                <li key={text}>
+                  <Link
+                    className={`${buttonVariants({
+                      variant: "link",
+                    })} text-primary-foreground !p-0`}
+                    href={path}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div className="flex  flex-col gap-[45px] mt-4">
-          <h2 className="text-white text-4xl">Resurslar</h2>
-          <ul className=" flex flex-col  gap-[25px]">
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Kitoblar
-            </li>
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Maqolalar
-            </li>
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Taqdimotlar
-            </li>
-            <li className="text-white text-2xl hover:underline hover:underline-offset-4 ">
-              Videolar
-            </li>
+        <div className="flex flex-col row-start-2 lg:row-start-1">
+          <h2 className="mb-5 font-medium text-2xl">Resurslar</h2>
+          <ul className="flex flex-col">
+            {navLinks.map(({ text, path }) => {
+              return (
+                <li key={text}>
+                  <Link
+                    className={`${buttonVariants({
+                      variant: "link",
+                    })} text-white !p-0`}
+                    href={path}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div className="flex flex-col mt-6 gap-[31px]">
-          <Image
-            src="../white-logo.svg"
-            width={221}
-            height={52}
-            alt="Chizlab logo"
-          />
-          <h4 className="text-white text-2xl  max-w-[380px]">
-            Chizmachilik va dizayn sohasidagi O‘zbekistondagi ilk sayt
-          </h4>
-          <h4 className="text-white text-2xl max-w-[380px]">
-            Mo‘tabarxon Muhammmadyusuf Mirzo Ulug‘bek
-          </h4>
-          <h3 className="text-white opacity-60 text-2xl">ChizLab 2024</h3>
+        <div className="flex flex-col row-start-1">
+          <div className="mb-5">
+            <Logo type="footer" />
+          </div>
+          <p>Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma</p>
         </div>
       </div>
     </footer>
