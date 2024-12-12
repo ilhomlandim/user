@@ -72,7 +72,7 @@ function Header() {
           onClick={handleClick}
           className="sm:hidden"
           size="icon"
-          variant={mobileNavbar ? "default" : "outline"}
+          variant="outline"
         >
           {mobileNavbar ? <Cross1Icon /> : <HamburgerMenuIcon />}
         </Button>

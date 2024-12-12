@@ -26,17 +26,19 @@ export function Mobile() {
   const { mobileNavbar } = useAppStore();
   return (
     <div
-      className={`sm:hidden duration-300 absolute w-full z-40 bg-primary-foreground p-5 transition-transform ${
-        mobileNavbar ? "translate-y-0 top-[76px]" : "-translate-y-full top-0"
+      className={`sm:hidden duration-500 absolute w-full top-24 z-40 bg-primary-foreground p-5 transition-transform ${
+        mobileNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <nav className="base-container mb-5">
+      <nav className="base-container mb-10">
         <ul className="grid grid-cols-2 w-full">
           {navLinks.map(({ path, text }) => {
             return (
               <li className="w-full" key={path}>
                 <Link
-                  className={`${buttonVariants({ variant: "ghost" })} w-full`}
+                  className={`${buttonVariants({
+                    variant: "ghost",
+                  })} w-full`}
                   href={path}
                 >
                   {text}
@@ -46,9 +48,11 @@ export function Mobile() {
           })}
         </ul>
       </nav>
-      <div className="flex justify-end gap-5">
-        <Button variant="outline">Ro'yhatdan o'tish</Button>
-        <Button>Kirish</Button>
+      <div className="flex w-full gap-5">
+        <Button className="w-full" variant="outline">
+          Ro'yhatdan o'tish
+        </Button>
+        <Button className="w-full">Kirish</Button>
       </div>
     </div>
   );
