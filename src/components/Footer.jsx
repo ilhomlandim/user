@@ -95,7 +95,12 @@ function Footer() {
           <div className="mb-5">
             <Logo type="footer" />
           </div>
-          <p>Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma</p>
+          <p className="mb-5">
+            Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma
+          </p>
+          <p className="text-slate-400">
+            chizlab.uz {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </footer>
