@@ -1,51 +1,33 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-const gilroyBlack = localFont({
-  src: "./fonts/Gilroy-Black.woff",
-  variable: "--font-gilroy-black",
-  weight: "100 900",
-});
-const gilroyRegular = localFont({
-  src: "./fonts/Gilroy-Regular.woff",
-  variable: "--font-gilroy-regular",
-  weight: "400",
-});
-const gilroyMedium = localFont({
-  src: "./fonts/Gilroy-Medium.woff",
-  variable: "--font-gilroy-medium",
-  weight: "500",
-});
-const gilroySemibold = localFont({
-  src: "./fonts/Gilroy-SemiBold.woff",
-  variable: "--font-gilroy-semibold",
-  weight: "100 900",
-});
-const gilroyHeavy = localFont({
-  src: "./fonts/Gilroy-Heavy.woff",
-  variable: "--font-gilroy-heavy",
-  weight: "100 900",
-});
-
-const gilroyLight = localFont({
-  src: "./fonts/Gilroy-Light.woff",
-  variable: "--font-gilroy-light",
-  weight: "100 900",
-});
-const gilroyThin = localFont({
-  src: "./fonts/Gilroy-Thin.woff",
-  variable: "--font-gilroythin",
-  weight: "100 900",
+const gilroyFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Gilroy-Black.woff",
+      weight: "900",
+    },
+    {
+      path: "../../public/fonts/Gilroy-SemiBold.woff",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/Gilroy-Medium.woff",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/Gilroy-Regular.woff",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/Gilroy-Light.woff",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/Gilroy-Thin.woff",
+      weight: "100",
+    },
+  ],
 });
 
 export const metadata = {
@@ -56,10 +38,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="uz">
-      <body
-        className={`${gilroyMedium.variable} ${gilroyRegular.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${gilroyFont.className} antialiased`}>{children}</body>
     </html>
   );
 }
