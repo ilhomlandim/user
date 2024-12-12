@@ -2,19 +2,19 @@ import Link from "next/link";
 
 function Main() {
   return (
-    <main className="flex items-center gap-5 justify-between container mx-auto">
-      <div className="w-[60%] h-[449px] bg-black rounded-tr-[146.5px] flex flex-col items-center justify-between rounded-b-[100px] relative group  hover:bg-white hover:border-black hover:border transition-all">
-        <h3 className="text-white font-normal mt-[154px] group-hover:text-black text-[50px]">
+    <main className="flex flex-col lg:flex-row items-center gap-5 justify-between container mx-auto mb-[334px] mt-8  px-4 lg:px-0">
+      <div className="w-full lg:w-[883px] h-[315px] md:h-[449px] px-8 sm:px-16 bg-black rounded-tr-[146.5px] flex flex-col items-center flex-wrap justify-between rounded-b-[100px] relative group hover:bg-white hover:border-black hover:border transition-all">
+        <h3 className="text-white font-normal mt-20 sm:mt-24 group-hover:text-black text-[30px] sm:text-[50px] text-center">
           ADABIYOT VA MAQOLALAR
         </h3>
         <Link
-          href="/Adabiyotlar"
-          className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 text-[24px] group-hover:text-black">
+          href="#"
+          className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 text-[18px] sm:text-[24px] group-hover:text-black">
           Ro'yhati
           <svg
-            width="45"
+            width="35"
             className="text-white group-hover:text-black"
-            height="35"
+            height="25"
             viewBox="0 0 15 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -26,19 +26,19 @@ function Main() {
           </svg>
         </Link>
       </div>
-      <div className="w-[40%] h-[449px] flex flex-col items-center gap-4 transition-all">
-        <div className="w-full h-[215px] group  hover:bg-white hover:border-black hover:border bg-black rounded-tr-[146.5px] rounded-b-[100px] flex flex-col items-center justify-between  relative">
-          <h3 className="text-white font-normal mt-[57px] group-hover:text-black  text-[50px]">
+      <div className="w-full lg:w-[625px] h-[449px] flex flex-col items-center gap-4 transition-all">
+        <div className="w-full h-[215px] group hover:bg-white hover:border-black hover:border bg-black rounded-tr-[146.5px] rounded-b-[100px] flex flex-col items-center justify-between relative">
+          <h3 className="text-white font-normal mt-[57px] group-hover:text-black text-[30px] sm:text-[50px] text-center">
             TAQDIMOTLAR
           </h3>
           <Link
-            href="/taqdimotlar"
-            className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 group-hover:text-black text-[24px]">
+            href="#"
+            className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 group-hover:text-black text-[18px] sm:text-[24px]">
             Ro'yhati
             <svg
-              width="45"
+              width="35"
               className="text-white group-hover:text-black"
-              height="35"
+              height="25"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -50,18 +50,18 @@ function Main() {
             </svg>
           </Link>
         </div>
-        <div className="w-full group h-[215px] bg-black rounded-tr-[146.5px] hover:bg-white hover:border-black hover:border rounded-b-[100px] flex flex-col items-center justify-between  relative transition-all">
-          <h3 className="text-white font-normal mt-[57px]  text-[50px] group-hover:text-black">
+        <div className="w-full group h-[215px] bg-black rounded-tr-[146.5px] hover:bg-white hover:border-black hover:border rounded-b-[100px] flex flex-col items-center justify-between relative transition-all">
+          <h3 className="text-white font-normal mt-[57px] text-[30px] sm:text-[50px] group-hover:text-black text-center">
             VIDEOLAR
           </h3>
           <Link
-            href="/Adabiyotlar"
-            className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 group-hover:text-black text-[24px]">
+            href="#"
+            className="text-white before:absolute before:inset-0 flex items-center gap-2 mb-3 group-hover:text-black text-[18px] sm:text-[24px]">
             Ro‘yhati
             <svg
-              width="45"
-              className="text-white group-hover:text-black "
-              height="35"
+              width="35"
+              className="text-white group-hover:text-black"
+              height="25"
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
