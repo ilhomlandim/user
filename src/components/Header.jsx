@@ -1,9 +1,6 @@
 "use client";
-import Image from "next/image";
-import logoImage from "/public/logo.svg";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import Link from "next/link";
 import {
   Cross1Icon,
   EnterIcon,
@@ -13,6 +10,7 @@ import {
 import KBD from "./KBD";
 import { useEffect, useRef } from "react";
 import { useAppStore } from "@/lib/zustand";
+import Logo from "./Logo";
 
 function Header() {
   const searchInput = useRef(null);
@@ -48,20 +46,7 @@ function Header() {
     >
       <div className="base-container flex items-center justify-between">
         <div className="flex items-center gap-5">
-          <Link
-            className="shrink-0 flex hover:opacity-80 active:opacity-60 transition-opacity"
-            tabIndex="-1"
-            href="/"
-          >
-            <Image
-              className="lg:w-[220px] lg:h-[50px] w-[110px] h-[25px]"
-              src={logoImage}
-              alt="chizlab.uz logo"
-              priority
-              width="220"
-              height="50"
-            />
-          </Link>
+          <Logo type="header" />
 
           <div className="relative lg:block hidden">
             <Input ref={searchInput} type="search" placeholder="Qidiruv..." />
