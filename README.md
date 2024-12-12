@@ -1,6 +1,6 @@
-## chizlab.uz
+# chizlab.uz
 
-# Developers
+## Developers
 
 Oyatillo Toshtemirov
 Mirzo Ulug'bek Xudoyberdiyev
