@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import NavBar from "@/components/NavBar";
+import { Desktop } from "@/components/Navbars";
 import PublicSources from "@/components/PublicSources";
 
 import { Button } from "@/components/ui/button";
@@ -11,12 +12,13 @@ export default function Home() {
   return (
     <div>
       <Header></Header>
-      <NavBar></NavBar>
-      <Main></Main>
-      <About></About>
+      <Desktop></Desktop>
+      {/* <NavBar></NavBar> */}
+      {/* <Main></Main> */}
+      {/* <About></About> */}
 
-      <PublicSources></PublicSources>
-      <Footer></Footer>
+      {/* <PublicSources></PublicSources> */}
+      {/* <Footer></Footer> */}
       {/* <Button>Click me</Button> */}
     </div>
   );
