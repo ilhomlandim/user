@@ -8,31 +8,17 @@ import {
   PersonIcon,
 } from "@radix-ui/react-icons";
 import KBD from "./KBD";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useAppStore } from "@/lib/zustand";
 import Logo from "./Logo";
+import TestMode from "./TestMode";
 
 function Header() {
   const searchInput = useRef(null);
   const { setMobileNavbar, mobileNavbar } = useAppStore();
-  const [osType, setOsType] = useState("");
   useEffect(() => {
-    const userAgent = navigator.userAgent;
-
-    if (/Macintosh|Mac OS X/.test(userAgent)) {
-      setOsType("Mac");
-    } else if (/Windows NT/.test(userAgent)) {
-      setOsType("Windows");
-    } else if (/Linux/.test(userAgent)) {
-      setOsType("Linux");
-    } else {
-      setOsType("Unknown");
-    }
-
     function handlePress(e) {
-      e.preventDefault();
       if ((e.metaKey && e.keyCode === 75) || (e.ctrlKey && e.keyCode === 75)) {
-        console.log(searchInput.current);
         e.preventDefault();
         searchInput.current.focus();
       }
@@ -52,46 +38,48 @@ function Header() {
   }
 
   return (
-    <header
-      className={`lg:py-5 py-3 relative transition-colors duration-300 z-50 bg-white border-b ${
-        mobileNavbar ? "border-b-slate-200" : "border-transparent"
-      }`}
-    >
-      <div className="base-container flex items-center justify-between">
-        <div className="flex items-center gap-5">
-          <Logo type="header" />
+    <div>
+      <TestMode />
+      <header
+        className={`lg:py-5 py-3 relative transition-colors duration-300 z-50 bg-white border-b ${
+          mobileNavbar ? "border-b-slate-200" : "border-transparent"
+        }`}
+      >
+        <div className="base-container flex items-center justify-between">
+          <div className="flex items-center gap-5">
+            <Logo type="header" />
 
-          <div className="relative lg:block hidden">
-            <Input ref={searchInput} type="search" placeholder="Qidiruv..." />
-            <KBD
-              text="K"
-              osType={osType}
-              className="absolute right-2 top-2/4 -translate-y-2/4"
-            ></KBD>
+            <div className="relative lg:block hidden">
+              <Input ref={searchInput} type="search" placeholder="Qidiruv..." />
+              <KBD
+                text="K"
+                className="absolute right-2 top-2/4 -translate-y-2/4"
+              ></KBD>
+            </div>
           </div>
-        </div>
 
-        <div className="hidden sm:flex items-center gap-5">
-          <Button variant="outline">
-            <span className="md:inline hidden">Ro'yhatdan o'tish</span>
-            <PersonIcon className="inline md:hidden" />
-          </Button>
-          <Button>
-            <span className="md:inline hidden">Kirish</span>
-            <EnterIcon className="inline md:hidden" />
+          <div className="hidden sm:flex items-center gap-5">
+            <Button variant="outline">
+              <span className="md:inline hidden">Ro'yhatdan o'tish</span>
+              <PersonIcon className="inline md:hidden" />
+            </Button>
+            <Button>
+              <span className="md:inline hidden">Kirish</span>
+              <EnterIcon className="inline md:hidden" />
+            </Button>
+          </div>
+
+          <Button
+            onClick={handleClick}
+            className="sm:hidden"
+            size="icon"
+            variant="outline"
+          >
+            {mobileNavbar ? <Cross1Icon /> : <HamburgerMenuIcon />}
           </Button>
         </div>
-
-        <Button
-          onClick={handleClick}
-          className="sm:hidden"
-          size="icon"
-          variant="outline"
-        >
-          {mobileNavbar ? <Cross1Icon /> : <HamburgerMenuIcon />}
-        </Button>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }
 
