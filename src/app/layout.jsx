@@ -1,9 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
-import { Desktop, Mobile } from "@/components/Navbars";
-import Footer from "@/components/Footer";
-import TestMode from "@/components/TestMode";
+import Header from "@/app/components/Header";
+import { Desktop, Mobile } from "@/app/components/Navbars";
+import Footer from "@/app/components/Footer";
+import TestMode from "@/app/components/TestMode";
+import Card from "@/app/components/Card";
 
 const gilroyFont = localFont({
   src: [
@@ -51,6 +52,7 @@ export default function layout({ children }) {
         <Desktop />
         <Mobile />
         <main className="grow">{children}</main>
+        <Card></Card>
         <Footer />
       </body>
     </html>
