@@ -8,17 +8,30 @@ import {
   PersonIcon,
 } from "@radix-ui/react-icons";
 import KBD from "./KBD";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppStore } from "@/lib/zustand";
 import Logo from "./Logo";
 
 function Header() {
   const searchInput = useRef(null);
   const { setMobileNavbar, mobileNavbar } = useAppStore();
-
+  const [osType, setOsType] = useState("");
   useEffect(() => {
+    const userAgent = navigator.userAgent;
+
+    if (/Macintosh|Mac OS X/.test(userAgent)) {
+      setOsType("Mac");
+    } else if (/Windows NT/.test(userAgent)) {
+      setOsType("Windows");
+    } else if (/Linux/.test(userAgent)) {
+      setOsType("Linux");
+    } else {
+      setOsType("Unknown");
+    }
+
     function handlePress(e) {
-      if (e.metaKey && e.keyCode === 75) {
+      e.preventDefault();
+      if ((e.metaKey && e.keyCode === 75) || (e.ctrlKey && e.keyCode === 75)) {
         console.log(searchInput.current);
         e.preventDefault();
         searchInput.current.focus();
@@ -52,6 +65,7 @@ function Header() {
             <Input ref={searchInput} type="search" placeholder="Qidiruv..." />
             <KBD
               text="K"
+              osType={osType}
               className="absolute right-2 top-2/4 -translate-y-2/4"
             ></KBD>
           </div>
