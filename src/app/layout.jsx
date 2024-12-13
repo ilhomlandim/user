@@ -4,8 +4,6 @@ import Header from "@/app/components/Header";
 import { Desktop, Mobile } from "@/app/components/Navbars";
 import Footer from "@/app/components/Footer";
 import TestMode from "@/app/components/TestMode";
-import Materials from "@/app/components/Materials";
-import MaterialPage from "./components/pages/materials/[id]";
 
 const gilroyFont = localFont({
   src: [
@@ -48,13 +46,10 @@ export default function layout({ children }) {
       <body
         className={`${gilroyFont.className} antialiased flex flex-col h-full`}
       >
-        <TestMode />
         <Header />
         <Desktop />
         <Mobile />
         <main className="grow">{children}</main>
-        <MaterialPage />
-        <Materials></Materials>
         <Footer />
       </body>
     </html>
