@@ -5,7 +5,7 @@ import logoImage from "/public/dark-logo.svg";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "../../components/ui/button";
 
 const sections = ["Adabiyotlar", "Taqdimotlar", "Maqolalar", "Videolar"];
 
@@ -57,7 +57,7 @@ export default function Sections() {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-          <div className="border border-primary py-14 px-7 rounded-lg">
+          <div className="border border-primary py-14 px-7 rounded-lg bg-primary-foreground">
             <Image
               className="w-36 h-8 inline-block mb-10"
               src={logoImage}
@@ -81,7 +81,7 @@ export default function Sections() {
             {sections.map((title) => {
               return (
                 <div
-                  className="border border-primary p-5 rounded-lg min-h-52 lg:min-h-fit flex items-center justify-center"
+                  className="border border-primary p-5 rounded-lg min-h-52 lg:min-h-fit flex items-center justify-center bg-primary-foreground"
                   key={title}
                 >
                   <h3 className="font-medium text-2xl text-center">{title}</h3>

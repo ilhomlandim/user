@@ -20,3 +20,5 @@ export const navLinks = [
     path: "/authors",
   },
 ];
+
+export const baseURL = "https://json-api.uz/api/project/chizlab";
