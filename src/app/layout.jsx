@@ -37,7 +37,7 @@ const gilroyFont = localFont({
 export const metadata = {
   title: "Bosh sahifa",
   description:
-    "Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma",
+    "Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma.",
 
   openGraph: {
     title: "Chizlab loyihasi",
