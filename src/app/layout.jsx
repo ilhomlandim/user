@@ -38,6 +38,26 @@ export const metadata = {
   title: "Bosh sahifa",
   description:
     "chizlab.uz loyihasi. Siz o'ylaganingizdan ko'ra ko'proq ma'lumot beramiz",
+
+  openGraph: {
+    title: "Chizlab loyihasi",
+    description:
+      "Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma",
+    url: "https://www.chizlab.uz",
+    type: "website",
+    images: [
+      {
+        url: "https://json-api.uz/uploads/file-1734173986799.png",
+        width: 1200,
+        height: 630,
+        alt: "chizlab.uz",
+      },
+    ],
+  },
+
+  alternates: {
+    canonical: "https://www.chizlab.uz",
+  },
 };
 
 export default function layout({ children }) {
