@@ -1,6 +1,6 @@
 "use client";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+import { Input } from "../../components/ui/input";
+import { Button } from "../../components/ui/button";
 import {
   Cross1Icon,
   EnterIcon,
@@ -41,7 +41,7 @@ function Header() {
     <div>
       <TestMode />
       <header
-        className={`lg:py-5 py-3 relative transition-colors duration-300 z-50 bg-white border-b ${
+        className={`lg:py-5 py-3 relative transition-colors duration-300 z-50 bg-white sm:bg-transparent border-b ${
           mobileNavbar ? "border-b-slate-200" : "border-transparent"
         }`}
       >
@@ -50,7 +50,12 @@ function Header() {
             <Logo type="header" />
 
             <div className="relative lg:block hidden">
-              <Input ref={searchInput} type="search" placeholder="Qidiruv..." />
+              <Input
+                className="bg-primary-foreground"
+                ref={searchInput}
+                type="search"
+                placeholder="Qidiruv..."
+              />
               <KBD
                 text="K"
                 className="absolute right-2 top-2/4 -translate-y-2/4"

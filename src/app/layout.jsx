@@ -64,7 +64,7 @@ export default function layout({ children }) {
   return (
     <html className="h-full" lang="uz">
       <body
-        className={`${gilroyFont.className} antialiased flex flex-col h-full`}
+        className={`${gilroyFont.className} antialiased flex flex-col h-full bg-body bg-cover`}
       >
         <Header />
         <Desktop />

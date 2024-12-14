@@ -6,6 +6,10 @@ import { redirect } from "next/navigation";
 const sections = [
   {
     title: "Adabiyotlar",
+    path: "/litature",
+  },
+  {
+    title: "Maqolalar",
     path: "/articles",
   },
   {
@@ -21,13 +25,11 @@ const sections = [
 export default function Hero() {
   return (
     <section className="py-10">
-      <div className="base-container grid grid-cols-1 gap-5 md:grid-cols-2 md:grid-rows-2">
-        {sections.map(({ title, path }, index) => {
+      <div className="base-container grid grid-cols-1 gap-5 md:grid-cols-2">
+        {sections.map(({ title, path }) => {
           return (
             <div
-              className={`bg-primary cursor-pointer hover:bg-primary-foreground border transition-colors duration-300 group min-h-52 md:min-h-40 lg:min-h-56 text-primary-foreground flex items-center justify-center rounded-b-[100px] rounded-tr-[150px] relative ${
-                index === 0 ? "row-start-1 row-end-3 md:rounded-tr-[224px]" : ""
-              }`}
+              className="bg-primary cursor-pointer hover:bg-primary-foreground border transition-colors duration-300 group min-h-52 md:min-h-40 lg:min-h-56 text-primary-foreground flex items-center justify-center rounded-b-[100px] rounded-tr-[150px] relative"
               onClick={() => {
                 redirect(path);
               }}

@@ -17,6 +17,9 @@ module.exports = {
       animation: {
         "test-mode": "marquee 30s linear infinite",
       },
+      backgroundImage: {
+        body: "url(../../public/body.svg)",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

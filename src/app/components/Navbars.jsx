@@ -2,7 +2,7 @@
 import { navLinks } from "@/constants";
 import Link from "next/link";
 import React from "react";
-import { Button, buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "../../components/ui/button";
 import { useAppStore } from "@/lib/zustand";
 
 export function Desktop() {
