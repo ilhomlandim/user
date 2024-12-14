@@ -37,13 +37,13 @@ const gilroyFont = localFont({
 export const metadata = {
   title: "Bosh sahifa",
   description:
-    "chizlab.uz loyihasi. Siz o'ylaganingizdan ko'ra ko'proq ma'lumot beramiz",
+    "Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma",
 
   openGraph: {
     title: "Chizlab loyihasi",
     description:
       "Chizmachilik va dizayn sohasidagi O'zbekistondagi ilk platforma",
-    url: "https://www.chizlab.uz",
+    url: "https://chizlab.vercel.app",
     type: "website",
     images: [
       {
