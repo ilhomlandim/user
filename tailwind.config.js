@@ -18,10 +18,12 @@ module.exports = {
         "test-mode": "marquee 30s linear infinite",
       },
       backgroundImage: {
-        body: "url(../../public/body.svg)",
+        body: "url(../../public/body.jpg)",
+        404: "url(../../public/404.jpg)",
       },
       colors: {
         background: "hsl(var(--background))",
+        "expensive-green": "#003837",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",

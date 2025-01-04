@@ -2,12 +2,12 @@
 import { navLinks } from "@/constants";
 import Link from "next/link";
 import React from "react";
-import { Button, buttonVariants } from "../../components/ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import { useAppStore } from "@/lib/zustand";
 
 export function Desktop() {
   return (
-    <nav className="hidden base-container sm:block pt-5">
+    <nav className="hidden base-container sm:block pt-5 mb-10">
       <ul className="flex justify-between flex-wrap">
         {navLinks.map(({ path, text }) => {
           return (

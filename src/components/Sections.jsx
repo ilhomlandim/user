@@ -5,7 +5,7 @@ import logoImage from "/public/dark-logo.svg";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
-import { buttonVariants } from "../../components/ui/button";
+import { buttonVariants } from "./ui/button";
 
 const sections = ["Adabiyotlar", "Taqdimotlar", "Maqolalar", "Videolar"];
 

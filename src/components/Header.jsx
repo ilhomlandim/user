@@ -1,6 +1,6 @@
 "use client";
-import { Input } from "../../components/ui/input";
-import { Button } from "../../components/ui/button";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 import {
   Cross1Icon,
   EnterIcon,
@@ -51,7 +51,7 @@ function Header() {
 
             <div className="relative lg:block hidden">
               <Input
-                className="bg-primary-foreground"
+                className="bg-white"
                 ref={searchInput}
                 type="search"
                 placeholder="Qidiruv..."
@@ -68,7 +68,7 @@ function Header() {
               <span className="md:inline hidden">Ro'yhatdan o'tish</span>
               <PersonIcon className="inline md:hidden" />
             </Button>
-            <Button>
+            <Button className="bg-expensive-green text-white">
               <span className="md:inline hidden">Kirish</span>
               <EnterIcon className="inline md:hidden" />
             </Button>

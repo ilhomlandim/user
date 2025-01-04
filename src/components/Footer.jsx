@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { buttonVariants } from "../../components/ui/button";
+import { buttonVariants } from "./ui/button";
 import { navLinks } from "@/constants";
 
 const contact = [
