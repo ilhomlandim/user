@@ -5,6 +5,9 @@ export async function getData(route = "/materials") {
     headers: {
       "Cache-Control": "no-store",
     },
+    next: {
+      revalidate: 0,
+    },
   });
   if (req.status === 200) {
     const { data } = await req.json();
