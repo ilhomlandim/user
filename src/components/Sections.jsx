@@ -12,6 +12,8 @@ import HeroTopRightImg from "/public/hero-tr.svg";
 import Statistics from "./Statistics";
 import AboutUs from "./AboutUs";
 import PublicSrc from "./PublicSrc";
+import Founders from "./Founders";
+
 const sections = ["Adabiyotlar", "Taqdimotlar", "Maqolalar", "Videolar"];
 
 export default function Sections() {
@@ -120,6 +122,7 @@ export default function Sections() {
       <AboutUs />
       <Statistics />
 
+      <Founders />
       {/*
 
        */}
