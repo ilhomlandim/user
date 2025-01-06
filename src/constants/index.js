@@ -102,4 +102,42 @@ barchasidan foydalana olasiz.
   },
 ];
 
+export const statistic = [
+  {
+    title: "Adabiyotlar",
+    count: 100,
+    imgRotate: 0,
+    position: "right-0 bottom-0",
+  },
+  {
+    title: "Taqdimotlar",
+    count: 100,
+    imgRotate: 90,
+    position: "left-0 bottom-0",
+  },
+  {
+    title: "Foydalanuvchilar",
+    count: 200,
+    imgRotate: "none",
+  },
+
+  {
+    title: "Videolar",
+    count: 100,
+    imgRotate: 270,
+    position: "right-0 top-0",
+  },
+  {
+    title: "Maqolalar",
+    count: 100,
+    imgRotate: 180,
+    position: "left-0 top-0",
+  },
+  {
+    title: "Pro ta'rifida",
+    count: 100,
+    imgRotate: "none",
+  },
+];
+
 export const baseURL = "https://json-api.uz/api/project/chizlab";
