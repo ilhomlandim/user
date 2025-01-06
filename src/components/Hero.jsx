@@ -8,7 +8,7 @@ import HeroBottomLeftImg from "/public/hero-bl.png";
 import HeroBottomRightImg from "/public/hero-br.png";
 
 export default function Hero() {
-  console.log(HeroTopLeftImg);
+  // console.log(HeroTopLeftImg);
 
   return (
     <section className="py-10">
