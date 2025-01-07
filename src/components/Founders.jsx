@@ -9,6 +9,7 @@ function Founders() {
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-normal my-16">
         Sayt ijodkorlari
       </h2>
+      {/* comment */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
         {foundersInfo.map(
           ({ Fullname, position, work, logo, contacts }, index) => {
