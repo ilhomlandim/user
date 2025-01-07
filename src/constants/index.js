@@ -23,7 +23,6 @@ export const navLinks = [
 
 import HeroBottomRightWhite from "/public/hero-white-br.svg";
 import HeroBottomLeftWhite from "/public/hero-white-bl.svg";
-import { Link } from "lucide-react";
 export const publicResurs = [
   {
     title: "Adabiyotlar",
@@ -103,18 +102,24 @@ barchasidan foydalana olasiz.
   },
 ];
 
+import HeroBottomRight from "/public/hero-br.svg";
+import HeroBottomLeft from "/public/hero-bl.svg";
+import HeroTopRight from "/public/hero-tr.svg";
+import HeroTopLeft from "/public/hero-tl.svg";
+
 export const statistic = [
   {
     title: "Adabiyotlar",
     count: 100,
-    imgRotate: 0,
+    img: HeroTopLeft,
+
     position: "right-0 bottom-0",
   },
   {
     title: "Taqdimotlar",
     count: 100,
-    imgRotate: 90,
     position: "left-0 bottom-0",
+    img: HeroTopRight,
   },
   {
     title: "Foydalanuvchilar",
@@ -125,13 +130,14 @@ export const statistic = [
   {
     title: "Videolar",
     count: 100,
-    imgRotate: 270,
+    img: HeroBottomLeft,
     position: "right-0 top-0",
   },
   {
     title: "Maqolalar",
     count: 100,
-    imgRotate: 180,
+    img: HeroBottomRight,
+
     position: "left-0 top-0",
   },
   {

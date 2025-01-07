@@ -62,34 +62,36 @@ function PublicSrc() {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {publicResurs.map((value, index) => {
-          return (
-            <div
-              key={index}
-              className={`cursor-pointer border border-primary bg-expensive-green rounded-xl flex-col group min-h-40 sm:min-h-52 lg:min-h-[371px] text-black flex items-center justify-center relative ${value.borderRadius} overflow-hidden`}
-              onClick={() => {
-                redirect(`${value.href}`);
-              }}
-            >
-              <img
-                className={`absolute lg:inline-block hidden ${value.position} bottom-0`}
-                src={value.img.src}
-                alt={`${value.title} rasmi`}
-              />
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center font-normal text-white group-hover:text-primary line-clamp-1">
-                {value.title}
-              </h3>
-              <Link
-                className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white group-hover:text-primary"
-                href={value.href}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+        {publicResurs.map(
+          ({ href, position, borderRadius, title, img }, index) => {
+            return (
+              <div
+                key={index}
+                className={`cursor-pointer border border-primary bg-expensive-green rounded-xl flex-col group min-h-40 sm:min-h-52 lg:min-h-[371px] text-black flex items-center justify-center relative ${borderRadius} overflow-hidden`}
+                onClick={() => {
+                  redirect(`${href}`);
+                }}
               >
-                Ko'rish
-                <ArrowRightIcon />
-              </Link>
-            </div>
-          );
-        })}
+                <img
+                  className={`absolute lg:inline-block hidden ${position} bottom-0`}
+                  src={img.src}
+                  alt={`${title} rasmi`}
+                />
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center font-normal text-white group-hover:text-primary line-clamp-1">
+                  {title}
+                </h3>
+                <Link
+                  className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white group-hover:text-primary"
+                  href={href}
+                >
+                  Ko'rish
+                  <ArrowRightIcon />
+                </Link>
+              </div>
+            );
+          }
+        )}
       </div>
     </div>
   );
