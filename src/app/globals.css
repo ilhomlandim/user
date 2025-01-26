@@ -124,4 +124,21 @@
   .base-container {
     @apply container sm:px-5 px-3 mx-auto;
   }
+  @keyframes spin-3d {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .animate-spin-back-and-forth {
+    perspective: 1000px;
+
+    animation: spin-3d 3s linear infinite;
+  }
 }
