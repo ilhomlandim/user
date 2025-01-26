@@ -19,7 +19,7 @@ function Founders() {
                 className="bg-white shadow-lg relative min-h-[300px] sm:min-h-[350px] md:min-h-[480px] px-5 md:px-10 py-6 sm:py-8 lg:py-11 border border-gray-300 flex rounded-[30px] flex-col justify-between gap-4"
               >
                 {/* Logo */}
-
+                {/*  */}
                 <img
                   src={logo.src}
                   //   comment
