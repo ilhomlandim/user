@@ -23,20 +23,19 @@ export const navLinks = [
 
 import HeroBottomRightWhite from "/public/hero-white-br.svg";
 import HeroBottomLeftWhite from "/public/hero-white-bl.svg";
-import { Link } from "lucide-react";
 export const publicResurs = [
   {
     title: "Adabiyotlar",
     href: "/adabiyotlar",
     img: HeroBottomLeftWhite,
-    borderRadius: "rounded-br-[100px]",
+    borderRadius: "rounded-br-[100px] ",
     position: "right-0",
   },
   {
     title: "Maqolalar",
     href: "/maqolalar",
     img: HeroBottomRightWhite,
-    borderRadius: "rounded-bl-[100px]",
+    borderRadius: " rounded-bl-[100px]",
     position: "left-0",
   },
   {
@@ -54,7 +53,6 @@ export const publicResurs = [
     position: "left-0",
   },
 ];
-
 export const aboutInfo = [
   {
     title: "Biz kimmiz?",
@@ -108,13 +106,13 @@ export const statistic = [
     title: "Adabiyotlar",
     count: 100,
     imgRotate: 0,
-    position: "right-0 bottom-0",
+    position: " right-0 bottom-0 ",
   },
   {
     title: "Taqdimotlar",
     count: 100,
     imgRotate: 90,
-    position: "left-0 bottom-0",
+    position: " left-0 bottom-0 ",
   },
   {
     title: "Foydalanuvchilar",
@@ -126,13 +124,13 @@ export const statistic = [
     title: "Videolar",
     count: 100,
     imgRotate: 270,
-    position: "right-0 top-0",
+    position: " right-0 top-0 ",
   },
   {
     title: "Maqolalar",
     count: 100,
     imgRotate: 180,
-    position: "left-0 top-0",
+    position: " left-0 top-0 ",
   },
   {
     title: "Pro ta'rifida",

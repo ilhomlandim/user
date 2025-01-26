@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import {
   Card,
   CardDescription,
@@ -5,11 +7,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import useMaterialStore from "@/lib/zustand";
 
 export default function MaterialCard({ info }) {
-  const { cover, title, summary } = info;
+  const router = useRouter();
+  const { setSelectedMaterial } = useMaterialStore();
+  const { cover, title, summary, id } = info;
+
+  const handleCardClick = () => {
+    localStorage.setItem("materialInfo", JSON.stringify(info));
+    setSelectedMaterial(info);
+    router.push(`/details/${id}`);
+  };
+
   return (
-    <Card className="overflow-hidden">
+    <Card className="overflow-hidden cursor-pointer" onClick={handleCardClick}>
       <div className="bg-primary-foreground">
         <Image
           className="object-cover w-full"

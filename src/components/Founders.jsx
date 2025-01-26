@@ -10,7 +10,7 @@ function Founders() {
         Sayt ijodkorlari
       </h2>
       {/* comment */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 ">
         {foundersInfo.map(
           ({ Fullname, position, work, logo, contacts }, index) => {
             return (
@@ -19,7 +19,7 @@ function Founders() {
                 className="bg-white shadow-lg relative min-h-[300px] sm:min-h-[350px] md:min-h-[480px] px-5 md:px-10 py-6 sm:py-8 lg:py-11 border border-gray-300 flex rounded-[30px] flex-col justify-between gap-4"
               >
                 {/* Logo */}
-
+                {/*  */}
                 <img
                   src={logo.src}
                   //   comment
