@@ -10,3 +10,9 @@ export const useAppStore = create((set) => {
     },
   };
 });
+const useMaterialStore = create((set) => ({
+  selectedMaterial: null,
+  setSelectedMaterial: (material) => set({ selectedMaterial: material }),
+}));
+
+export default useMaterialStore;

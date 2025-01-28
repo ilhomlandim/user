@@ -62,12 +62,12 @@ function PublicSrc() {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {publicResurs.map((value, index) => {
           return (
             <div
               key={index}
-              className={`cursor-pointer border border-primary bg-expensive-green rounded-xl flex-col group min-h-40 sm:min-h-52 lg:min-h-[371px] text-black flex items-center justify-center relative ${value.borderRadius} overflow-hidden`}
+              className={`cursor-pointer hover:shado-wg  hover:scale-105 border border-primary bg-expensive-green rounded-xl flex-col group h-[200px] lg:h-[330px] text-black flex items-center justify-center relative overflow-hidden  ${value.borderRadius} `}
               onClick={() => {
                 redirect(`${value.href}`);
               }}
@@ -77,11 +77,11 @@ function PublicSrc() {
                 src={value.img.src}
                 alt={`${value.title} rasmi`}
               />
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center font-normal text-white group-hover:text-primary line-clamp-1">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center font-normal text-white  line-clamp-1">
                 {value.title}
               </h3>
               <Link
-                className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white group-hover:text-primary"
+                className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white "
                 href={value.href}
               >
                 Ko'rish

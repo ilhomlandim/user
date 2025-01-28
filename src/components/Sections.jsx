@@ -122,7 +122,7 @@ export default function Sections() {
       <AboutUs />
       <Statistics />
 
-      <Founders />
+      {/* <Founders /> */}
       {/*
 
        */}
