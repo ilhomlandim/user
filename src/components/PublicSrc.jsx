@@ -85,17 +85,17 @@ function PublicSrc() {
                 href={value.href}
               >
                 <img
-                  className={`absolute lg:inline-block hidden ${position} bottom-0`}
-                  src={img.src}
-                  alt={`${title} rasmi`}
+                  className={`absolute lg:inline-block hidden ${value.position} bottom-0`}
+                  src={value.img.src}
+                  alt={`${value.title} rasmi`}
                 />
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center font-normal text-white group-hover:text-primary line-clamp-1">
-                  {title}
+                  {value.title}
                 </h3>
               </Link>
               <Link
                 className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white group-hover:text-primary"
-                href={href}
+                href={value.href}
               >
                 Ko'rish
                 <ArrowRightIcon />
