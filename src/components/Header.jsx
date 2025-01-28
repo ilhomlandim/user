@@ -45,11 +45,11 @@ function Header() {
           mobileNavbar ? "border-b-slate-200" : "border-transparent"
         }`}
       >
-        <div className="base-container flex items-center justify-between">
-          <div className="flex items-center gap-5">
+        <div className="base-container flex items-center justify-between md:justify-center">
+          <div className="flex justify-center items-center gap-5">
             <Logo type="header" />
-
-            <div className="relative lg:block hidden">
+            {/* 
+            <div className="relative  lg:block ">
               <Input
                 className="bg-white"
                 ref={searchInput}
@@ -60,10 +60,10 @@ function Header() {
                 text="K"
                 className="absolute right-2 top-2/4 -translate-y-2/4"
               ></KBD>
-            </div>
+            </div> */}
           </div>
 
-          <div className="hidden sm:flex items-center gap-5">
+          {/* <div className="hidden sm:flex items-center gap-5">
             <Button variant="outline">
               <span className="md:inline hidden">Ro'yhatdan o'tish</span>
               <PersonIcon className="inline md:hidden" />
@@ -72,7 +72,7 @@ function Header() {
               <span className="md:inline hidden">Kirish</span>
               <EnterIcon className="inline md:hidden" />
             </Button>
-          </div>
+          </div> */}
 
           <Button
             onClick={handleClick}

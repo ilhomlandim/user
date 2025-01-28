@@ -28,14 +28,14 @@ export const publicResurs = [
     title: "Adabiyotlar",
     href: "/adabiyotlar",
     img: HeroBottomLeftWhite,
-    borderRadius: "rounded-br-[100px]",
+    borderRadius: "rounded-br-[100px] ",
     position: "right-0",
   },
   {
     title: "Maqolalar",
     href: "/maqolalar",
     img: HeroBottomRightWhite,
-    borderRadius: "rounded-bl-[100px]",
+    borderRadius: " rounded-bl-[100px]",
     position: "left-0",
   },
   {
@@ -53,7 +53,6 @@ export const publicResurs = [
     position: "left-0",
   },
 ];
-
 export const aboutInfo = [
   {
     title: "Biz kimmiz?",
@@ -112,14 +111,15 @@ export const statistic = [
     title: "Adabiyotlar",
     count: 100,
     img: HeroTopLeft,
-
     position: "right-0 bottom-0",
+
   },
   {
     title: "Taqdimotlar",
     count: 100,
     position: "left-0 bottom-0",
     img: HeroTopRight,
+
   },
   {
     title: "Foydalanuvchilar",
@@ -139,6 +139,7 @@ export const statistic = [
     img: HeroBottomRight,
 
     position: "left-0 top-0",
+
   },
   {
     title: "Pro ta'rifida",
