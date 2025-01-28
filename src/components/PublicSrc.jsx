@@ -81,7 +81,7 @@ function PublicSrc() {
                 {value.title}
               </h3>
               <Link
-                className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white "
+                className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white"
                 href={value.href}
               >
                 <img
@@ -92,17 +92,17 @@ function PublicSrc() {
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center font-normal text-white group-hover:text-primary line-clamp-1">
                   {title}
                 </h3>
-                <Link
-                  className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white group-hover:text-primary"
-                  href={href}
-                >
-                  Ko'rish
-                  <ArrowRightIcon />
-                </Link>
-              </div>
-            );
-          }
-        )}
+              </Link>
+              <Link
+                className="flex items-center gap-2 text-base sm:text-lg lg:text-xl text-white group-hover:text-primary"
+                href={href}
+              >
+                Ko'rish
+                <ArrowRightIcon />
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
