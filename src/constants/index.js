@@ -112,19 +112,18 @@ export const statistic = [
     count: 100,
     img: HeroTopLeft,
     position: "right-0 bottom-0",
-
   },
   {
     title: "Taqdimotlar",
     count: 100,
     position: "left-0 bottom-0",
     img: HeroTopRight,
-
   },
   {
     title: "Foydalanuvchilar",
     count: 200,
     imgRotate: "none",
+    position: "",
   },
 
   {
@@ -139,12 +138,12 @@ export const statistic = [
     img: HeroBottomRight,
 
     position: "left-0 top-0",
-
   },
   {
     title: "Pro ta'rifida",
     count: 100,
     imgRotate: "none",
+    position: "",
   },
 ];
 
