@@ -1,7 +1,6 @@
 import { statistic } from "@/constants";
 import React from "react";
 import BottomLeftWhiteImg from "/public/hero-white-bl.svg";
-import BottomLeftImg from "/public/aboutUsLeft.svg";
 
 function Statistics() {
   return (

@@ -4,7 +4,7 @@ import HeaderLogo from "/public/dark-logo.svg";
 import FooterLogo from "/public/white-logo.svg";
 
 function Logo({ type }) {
-  let currentImage;
+  let currentImage = null;
   switch (type) {
     case "header":
       currentImage = HeaderLogo;

@@ -1,4 +1,3 @@
-"use client";
 import { Suspense } from "react";
 import Hero from "../components/Hero";
 import MaterialsSkleton from "../components/loaders/MaterialsSkleton";
