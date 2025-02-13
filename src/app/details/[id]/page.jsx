@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import Loader from "@/components/Loader";
 export default function DetailsPage({ params }) {
   const router = useRouter();
   const { selectedMaterial } = useMaterialStore();
@@ -28,7 +27,7 @@ export default function DetailsPage({ params }) {
   };
 
   if (!details) {
-    return <Loader />;
+    return <p>Loading...</p>;
   }
 
   return (
